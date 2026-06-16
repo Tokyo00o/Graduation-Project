@@ -1,0 +1,7 @@
+{
+  "mock_asr_expected": 0.04,
+  "mock_asr_tolerance": 0.05,
+  "budget": 100,
+  "strategy": "random",
+  "seed_count": 10
+}
