@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+phase_1_complete: true
+nodes:
+  intel_retriever:
+    writes:
+      - graph_retrieval_context
+  analyst:
+    writes:
+      - defense_fingerprint
+      - attack_plan
+      - curriculum_plan
+      - curriculum_stage
+      - grooming_tactic
+  intel_updater:
+    writes:
+      - threat_graph_summary
+      - mined_patterns
+      - mined_failures
+  hive_mind:
+    reads:
+      - attack_plan
+  judge_and_score:
+    writes:
+      - ensemble_scores
+      - prometheus_score

@@ -1,0 +1,13 @@
+mechanisms:
+  - id: constitutional_ai
+    description: Core model alignment prohibiting harmful behaviors
+  - id: policy_filter
+    description: Explicit checking against terms of service or policies
+  - id: context_guard
+    description: Context-aware filtering based on dialog history
+  - id: semantic_filter
+    description: Detection of unsafe or inappropriate semantic topics
+  - id: rlhf_refusal
+    description: General reinforcement learning-based refusal
+  - id: tool_policy
+    description: Restrictions on function calling or external actions

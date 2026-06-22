@@ -1,0 +1,36 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\Mahmoud Salman\Downloads\prompt_evo - Grad project
+configfile: pytest.ini
+plugins: anyio-4.12.0, langsmith-0.5.0
+collected 583 items
+
+tests\test_adapters.py .....                                             [  0%]
+tests\test_arbitration_and_hitl_integration.py ...                       [  1%]
+tests\test_architecture_contracts.py ......                              [  2%]
+tests\test_batch1_smoke.py .....                                         [  3%]
+tests\test_batch2_1_fixes.py ..                                          [  3%]
+tests\test_batch2_security.py .                                          [  3%]
+tests\test_batch3_api_security.py .......                                [  4%]
+tests\test_batch4_target_fail_closed.py ...                              [  5%]
+tests\test_circuit_breaker.py .......                                    [  6%]
+tests\test_curriculum_planner.py ....                                    [  7%]
+tests\test_dataset_builder.py ....                                       [  8%]
+tests\test_defense_fingerprinter.py ...                                  [  8%]
+tests\test_evaluators.py .......                                         [  9%]
+tests\test_graceful_shutdown.py ...                                      [ 10%]
+tests\test_graph_compilation.py ......                                   [ 11%]
+tests\test_graph_routing.py ............................................ [ 18%]
+...................................                                      [ 24%]
+tests\test_harmbench.py .....                                            [ 25%]
+tests\test_health_probe.py .....                                         [ 26%]
+tests\test_hitl_handler.py .........                                     [ 28%]
+tests\test_intelligence_upgrades.py ......                               [ 29%]
+tests\test_judge_ensemble.py ....                                        [ 29%]
+tests\test_main_cli_injection.py ...                                     [ 30%]
+tests\test_missing_coverage.py ...                                       [ 30%]
+tests\test_mutation_engine.py ....                                       [ 31%]
+tests\test_output_schemas.py .....                                       [ 32%]
+tests\test_paths.py .....                                                [ 33%]
+tests\test_pattern_miner.py ....                                         [ 33%]
+tests\test_pdf_reporter.py ......................................        [ 40%]

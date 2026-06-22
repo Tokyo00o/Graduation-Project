@@ -1,0 +1,128 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "node_type": "Target",
+      "key": "unknown",
+      "id": "Target:unknown"
+    },
+    {
+      "node_type": "Technique",
+      "key": "Logical Appeal",
+      "pap": "Logical Appeal",
+      "id": "Technique:Logical_Appeal"
+    },
+    {
+      "node_type": "DefenseMechanism",
+      "key": "rlhf_refusal",
+      "label": "rlhf_refusal",
+      "id": "DefenseMechanism:rlhf_refusal"
+    },
+    {
+      "node_type": "SuccessfulStrategy",
+      "key": "Logical Appeal:none",
+      "pap": "Logical Appeal",
+      "score": 5.0,
+      "id": "SuccessfulStrategy:Logical_Appeal_none"
+    },
+    {
+      "type": "Target",
+      "id": "unknown"
+    },
+    {
+      "type": "AttackTechnique",
+      "id": "Logical Appeal"
+    },
+    {
+      "type": "DefenseMechanism",
+      "id": "rlhf_refusal"
+    },
+    {
+      "type": "DefenseMechanism",
+      "id": "policy_filter"
+    },
+    {
+      "type": "DefenseMechanism",
+      "id": "semantic_filter"
+    }
+  ],
+  "links": [
+    {
+      "edge_type": "DEFENDED_BY",
+      "ts": 1781385882.8074331,
+      "source": "Target:unknown",
+      "target": "DefenseMechanism:rlhf_refusal",
+      "key": "DEFENDED_BY"
+    },
+    {
+      "edge_type": "SUCCESS_ON",
+      "score": 5.0,
+      "ts": 1781385882.8074331,
+      "source": "Technique:Logical_Appeal",
+      "target": "Target:unknown",
+      "key": "SUCCESS_ON"
+    },
+    {
+      "edge_type": "BYPASSED_BY",
+      "score": 5.0,
+      "ts": 1781385882.8074331,
+      "source": "Technique:Logical_Appeal",
+      "target": "DefenseMechanism:rlhf_refusal",
+      "key": "BYPASSED_BY"
+    },
+    {
+      "edge_type": "DERIVED_FROM",
+      "source": "SuccessfulStrategy:Logical_Appeal_none",
+      "target": "Technique:Logical_Appeal",
+      "key": "DERIVED_FROM"
+    },
+    {
+      "type": "DEFENDED_BY",
+      "source": "unknown",
+      "target": "unknown",
+      "key": 0
+    },
+    {
+      "type": "DEFENDED_BY",
+      "source": "unknown",
+      "target": "rlhf_refusal",
+      "key": 0
+    },
+    {
+      "type": "DEFENDED_BY",
+      "source": "unknown",
+      "target": "policy_filter",
+      "key": 0
+    },
+    {
+      "type": "DEFENDED_BY",
+      "source": "unknown",
+      "target": "semantic_filter",
+      "key": 0
+    },
+    {
+      "type": "BYPASSED_BY",
+      "count": 42,
+      "avg_turn": 0.4523809523809524,
+      "source": "Logical Appeal",
+      "target": "rlhf_refusal",
+      "key": 0
+    },
+    {
+      "type": "SUCCESS_ON",
+      "source": "Logical Appeal",
+      "target": "unknown",
+      "key": 0
+    },
+    {
+      "type": "BYPASSED_BY",
+      "count": 19,
+      "avg_turn": 1.0,
+      "source": "Logical Appeal",
+      "target": "unknown",
+      "key": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.env
+*.faiss
+*.pkl
+data/memory/tltm_vectors/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Persistence
+*.db
+reports/*.pdf
+benchmarks/results/*.jsonl
