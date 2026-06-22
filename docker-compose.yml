@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: "3.8"
 
 services:
@@ -37,3 +38,42 @@ volumes:
   promptevo_data:
   promptevo_reports:
   redis_data:
+=======
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: fuzzguard-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - FUZZGUARD_APP_NAME=FuzzGuard API
+      - FUZZGUARD_DATABASE_URL=sqlite:///data/fuzzguard.db
+      - FUZZGUARD_DEBUG=false
+      - FUZZGUARD_SCHEDULER_ENABLED=true
+      - FUZZGUARD_SCHEDULER_CHECK_INTERVAL=30
+      - FUZZGUARD_ENCRYPTION_KEY=${FUZZGUARD_ENCRYPTION_KEY:-}
+    volumes:
+      - fuzzguard-data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: fuzzguard-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  fuzzguard-data:
+>>>>>>> 3bdffd31e91c8d986656adf60c252912e82bf806

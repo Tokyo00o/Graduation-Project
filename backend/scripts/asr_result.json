@@ -1,0 +1,8 @@
+{
+  "asr": 0.04,
+  "expected_asr": 0.04,
+  "tolerance": 0.05,
+  "passed": true,
+  "budget": 100,
+  "strategy": "random"
+}
